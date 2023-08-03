@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --primary: #e9ab87;
+    --secondary: white;
+    --pop: #9c001a;
+}
+  
+
+  body {
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    color: var(--pop);
+}
+
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+header h1 {
+    color: var(--pop);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 1px;
+    justify-content: space-between;
+}
+header nav {
+    margin: 20px;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 8px;
+    font-size: 28px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--secondary);
+}
+header nav ul li a:hover {
+    background: var(--pop);
+    color: rgb(37, 0, 0);
+    border-radius: 10px;
+}
+header nav ul li a:active {
+    background: #ffffff;
+    color: red;
+    border-radius: 10px;
+}
+
+
+.hero {
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/24/10/58/sand-2005066_1280.jpg) ;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero figure img {
+    height: 400px;
+}
+.hero figure img {
+    background-image: url("./assets/images/PXL_20230604_033822581.MP (2).jpg");
+}
+.hero blockquote p, cite{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(37, 0, 0);
+}
+
+
+.sidebar {
+    height: 90%;
+    width: 25%;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 100%;
+    background:var(--pop);
+    color:var(--secondary);
+    display:block;
+    float:left;
+    overflow:hidden
+}   
+.sidebar a {
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.sidebar a p {
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    padding-top: 5px;
+    text-align: center;
+}
+.content {
+    justify-content: right;
+    overflow: hidden;
+    float:right;
+    height: 90%;
+    width: 75%;
+}
+.content article {
+    font-size: 30px;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    line-height: 2;
+    text-align: center;
+}
+.my-work {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+.my-work h2 {
+    color: var(--secondary);
+}
+.projects-grid-wrapper {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.projects-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+.project {
+    border: solid;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.project:hover {
+    opacity: 1.0;
+}
+.Code-Refactor-For-Horiseon {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url(./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+}
+.Coding-Quiz {
+    background-image: url(./assets/images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+    background-position: 50% 15%;
+}
+.Workday-Calendar {
+    background-image: url(./assets/images/hope-house-press-leather-diary-studio-PJzc7LOt2Ig-unsplash.jpg);
+    background-position: 60% 50%;
+}
+.project-label {
+    /*background-color: var(--secondary);*/
+    background-color: lightgray;;
+    color: var(--primary);
+    padding: 10px;
+}
+
+footer{
+    margin-top: auto;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary);
+}
+footer h2{
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 10px;
+    }
+    header nav ul {
+        min-height: 60px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .sidebar {
+        flex-direction:row;
+        flex-flow: nowrap;
+    }
+    .content{
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .content-wrapper {
+        width: 100%;
+    }
+}
