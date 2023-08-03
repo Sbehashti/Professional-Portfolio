@@ -74,6 +74,9 @@ header nav ul li a:active {
 .hero figure img {
     height: 400px;
 }
+.hero figure img {
+    background-image: url("./assets/images/PXL_20230604_033822581.MP (2).jpg");
+}
 .hero blockquote p, cite{
     font-size: 20px;
     display: flex;
@@ -81,7 +84,6 @@ header nav ul li a:active {
     text-align: center;
     color: rgb(37, 0, 0);
 }
-
 
 
 .sidebar {
